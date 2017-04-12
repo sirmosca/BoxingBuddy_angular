@@ -26,3 +26,7 @@ body {
     padding: 10px;
     text-align: center;
 }
+
+.add-small-margin {
+  margin:5px;
+}

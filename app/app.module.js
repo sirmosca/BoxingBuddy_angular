@@ -1,11 +1,12 @@
-'use strict'
+"use strict";
 
-angular.module('boxingBuddyApp', [
-    'ngAnimate',
-    'ngRoute',
-    'core',
-    'comboTeachingView',
-    'boxingMatchView',
-    'settingsView',
-    'mainView'
+angular.module("boxingBuddyApp", [
+    "ngAnimate",
+    "ngRoute",
+    "core",
+    "glossaryView",
+    "comboTeachingView",
+    "boxingMatchView",
+    "settingsView",
+    "mainView",
 ]);

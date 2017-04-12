@@ -1,0 +1,11 @@
+<p class="header text-center">Glossary</p>
+<div class="container">
+    <div ng-repeat="combo in $ctrl.combos" class="add-small-margin">
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#{{combo.id}}">{{combo.name}}</button>
+        <div id="{{combo.id}}" class="collapse">
+            <div class="card card-block">
+                {{combo.snippet}}
+            </div>
+        </div>
+    </div>
+</div>
