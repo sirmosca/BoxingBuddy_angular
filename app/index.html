@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" ng-app="boxingBuddyApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Boxing Buddy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Autour+One|Patua+One|Permanent+Marker|Rock+Salt|Sniglet" rel="stylesheet">
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app.animations.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="app.animations.js"></script>
+    <script src="core/core.module.js"></script>
+    <!--<script src="core/checkmark/checkmark.filter.js"></script>-->
+    <script src="core/speech/speech.module.js"></script>
+    <script src="core/speech/speech.service.js"></script>
+    <script src="core/settings/settings.module.js"></script>
+    <script src="core/settings/settings.service.js"></script>
+    <script src="core/combination/combination.module.js"></script>
+    <script src="core/combination/combination.service.js"></script>
+    <script src="boxing-match-view/boxing-match-view.module.js"></script>
+    <script src="boxing-match-view/boxing-match-view.component.js"></script>
+    <script src="main-view/main-view.module.js"></script>
+    <script src="main-view/main-view.component.js"></script>
+    <script src="settings-view/settings-view.module.js"></script>
+    <script src="settings-view/settings-view.component.js"></script>
+    <script src="combo-teaching-view/combo-teaching-view.module.js"></script>
+    <script src="combo-teaching-view/combo-teaching-view.component.js"></script>
+  </head>
+  <body>
+
+    <div>
+      <div ng-view></div>
+    </div>
+
+    <div class="row center" style="margin-top:300px">Icons made by 
+      <a href="http://www.freepik.com" title="Freepik">Freepik</a> from 
+      <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by 
+      <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+    </div>
+  </body>
+</html>
