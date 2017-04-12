@@ -5,11 +5,11 @@ angular
     .factory('Settings', ['$resource', '$timeout', '$interval', '$location',
         function($resource, $timeout, $interval, $location) {
             var service = {};
-            service.roundTime = 10000;
+            service.roundTime = 180000;
             service.maxRounds = 2;
             service.timeBetweenPunches = 750;
             service.timeBetweenCombos = 1000;
-            service.roundIntermission = 2000;
+            service.roundIntermission = 10000;
             service.displayType = "numbers";
 
             service.setRoundTime = function(roundTime) {
