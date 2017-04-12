@@ -23,7 +23,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                             this.push(value);
                         }
                     },
-                    self.combos,
+                    self.combos
                 );
             });
 
@@ -48,7 +48,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                         maxRounds,
                         roundIntermission,
                         timeBetweenPunches,
-                        timeBetweenCombos,
+                        timeBetweenCombos
                     );
                 });
             };
@@ -59,7 +59,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                 maxRounds,
                 roundIntermission,
                 timeBetweenPunches,
-                timeBetweenCombos,
+                timeBetweenCombos
             ) {
                 self.pauseBoxing = false;
                 self.doPunches(timeBetweenPunches, timeBetweenCombos);
@@ -67,7 +67,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                     () => {
                         self.stopPunching();
                     },
-                    roundTime,
+                    roundTime
                 )
                     .then(() => {
                         return self.roundIntermission(roundIntermission);
@@ -87,7 +87,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                                 maxRounds,
                                 roundIntermission,
                                 timeBetweenPunches,
-                                timeBetweenCombos,
+                                timeBetweenCombos
                             );
                         }
                     });
@@ -104,10 +104,10 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                             () => {
                                 self.doPunches(
                                     timeBetweenPunches,
-                                    timeBetweenCombos,
+                                    timeBetweenCombos
                                 );
                             },
-                            timeBetweenCombos,
+                            timeBetweenCombos
                         );
                     });
             };
@@ -148,7 +148,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                     () => {
                         self.pauseBoxing = true;
                     },
-                    () => {},
+                    () => {}
                 );
             };
 
@@ -173,7 +173,7 @@ angular.module("boxingMatchView").component("boxingMatchView", {
                                 Speech.sayText("Fight");
                                 self.changeDisplay("");
                             },
-                            1000,
+                            1000
                         );
                     })
                     .then(() => {
