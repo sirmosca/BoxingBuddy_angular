@@ -20,6 +20,10 @@ body {
   margin:0px;
 }
 
+.add-small-margin {
+  margin:5px;
+}
+
 .center {
     margin: auto;
     width: 50%;
@@ -27,6 +31,6 @@ body {
     text-align: center;
 }
 
-.add-small-margin {
-  margin:5px;
+.glossary-card-header {
+    font-weight: bold;
 }

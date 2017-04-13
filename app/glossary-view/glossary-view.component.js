@@ -17,6 +17,14 @@ angular.module("glossaryView").component("glossaryView", {
                     self.combos
                 );
             });
+
+            self.formatPunches = function(combo) {
+                var output = "";
+                for (var i=0; i < combo.snippet.length; i++) {
+                    output += combo.snippet[i] + " (" + combo.punches[i] + "), ";
+                }
+                return output;
+            }
         },
     ],
 });
