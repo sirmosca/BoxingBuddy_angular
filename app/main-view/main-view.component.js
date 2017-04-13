@@ -19,6 +19,10 @@ angular.module("mainView").component("mainView", {
             self.viewGlossary = function() {
                 Settings.navigate("/glossary");
             };
+
+            self.practiceCombos = function() {
+                Settings.navigate("/combos");
+            }
         },
     ],
 });
