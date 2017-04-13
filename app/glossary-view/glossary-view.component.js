@@ -20,8 +20,8 @@ angular.module("glossaryView").component("glossaryView", {
 
             self.formatPunches = function(combo) {
                 var output = "";
-                for (var i=0; i < combo.snippet.length; i++) {
-                    output += combo.snippet[i] + " (" + combo.punches[i] + "), ";
+                for (var i=0; i < combo.punchNames.length; i++) {
+                    output += combo.punchNames[i] + " (" + combo.punchNumbers[i] + "), ";
                 }
                 return output;
             }

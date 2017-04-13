@@ -2,37 +2,37 @@
     {
         "id": "23", 
         "name": "23", 
-        "snippet": ["straight", "left hook", "straight"],
-        "punches": [2,3,2],
+        "punchNames": ["straight", "left hook", "straight"],
+        "punchNumbers": [2,3,2],
         "isExtendedCombo": false
     }, 
     {
         "id": "eggs-and-bacon", 
         "name": "Eggs & Bacon", 
-        "snippet": ["jab", "jab", "straight"],
-        "punches": [1,1,2],
+        "punchNames": ["jab", "jab", "straight"],
+        "punchNumbers": [1,1,2],
         "isExtendedCombo": false
     }, 
     {
         "id": "57", 
         "name": "57", 
-        "snippet": ["right upper cut", "left upper cut", "right upper cut", "left upper cut", "straight", "left hook", "straight"],
-        "punches": [4,5,4,5,2,3,2],
+        "punchNames": ["right upper cut", "left upper cut", "right upper cut", "left upper cut", "straight", "left hook", "straight"],
+        "punchNumbers": [4,5,4,5,2,3,2],
         "isExtendedCombo": false
     }, 
     {
         "id": "tyson", 
         "name": "tyson", 
-        "snippet": ["jab", "straight", "left hook", "right upper", "left hook", "straight"],
-        "punches": [1,2,3,4,3,2],
+        "punchNames": ["jab", "straight", "left hook", "right upper", "left hook", "straight"],
+        "punchNumbers": [1,2,3,4,3,2],
         "isExtendedCombo": false 
     },
     {
         "id": "war",
         "name": "war",
-        "snippet": "",
+        "punchNames": "",
         "startingPunches": [9,3,2,"slip"],
-        "punches": [2,3,2,"slip",2,3,2,"slip","slip",3,2,3,2,"block 10",4,2,3,2,"catch 3",3,2,"roll"],
+        "punchNumbers": [2,3,2,"slip",2,3,2,"slip","slip",3,2,3,2,"block 10",4,2,3,2,"catch 3",3,2,"roll"],
         "isExtendedCombo": true
     }
 ]
