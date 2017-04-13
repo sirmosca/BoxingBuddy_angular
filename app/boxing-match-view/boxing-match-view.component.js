@@ -115,10 +115,10 @@ angular.module("boxingMatchView").component("boxingMatchView", {
             self.throwCombo = function(timeBetweenPunches, timeBetweenCombos) {
                 var punchIndex = 0;
                 var comboIndex = self.getRandomComboIndex();
-                const combo = [self.combos[comboIndex].name];
+                const combo = self.combos[comboIndex].name;
                 const interval = self.combos[comboIndex].punchNumbers.length *
                     timeBetweenPunches;
-                self.changeDisplay(combo[0]);
+                self.changeDisplay(combo);
                 punching = Settings.sleep(() => {}, interval);
 
                 return punching;
