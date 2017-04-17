@@ -8,6 +8,8 @@ angular.module("glossaryView").component("glossaryView", {
         function GlossaryController(Settings, Combination) {
             var self = this;
             self.combos = [];
+            self.selectedCombo = null;
+
             Combination.query().$promise.then(function(resp) {
                 angular.forEach(
                     resp,
@@ -18,12 +20,23 @@ angular.module("glossaryView").component("glossaryView", {
                 );
             });
 
-            self.formatPunches = function(combo) {
+            self.formatPunches = function() {
+                if (self.selectedCombo === null) return;
+
+                var combo = self.selectedCombo;
                 var output = "";
                 for (var i=0; i < combo.punchNames.length; i++) {
                     output += combo.punchNames[i] + " (" + combo.punchNumbers[i] + "), ";
                 }
                 return output;
+            };
+
+            self.getName = function() {
+                return self.selectedCombo === null ? "" : self.selectedCombo.name;
+            };
+
+            self.selectCombo = function(combo) {
+                self.selectedCombo = combo;
             }
         },
     ],

@@ -2,16 +2,14 @@
 <div class="container">
     <div class="btn-group col-md-2">
         <div ng-repeat="combo in $ctrl.combos" class="add-small-margin">
-            <button type="button" class="btn btn-info btn-block" data-toggle="collapse" data-target="#{{combo.id}}">{{combo.name}}</button>
+            <button type="button" class="btn btn-info btn-block" ng-click="$ctrl.selectCombo(combo)">{{combo.name}}</button>
         </div>
     </div>
     <div class="col-md-10">
-        <div ng-repeat="combo in $ctrl.combos" class="add-small-margin">
-            <div id="{{combo.id}}" class="collapse">
-                <div class="card card-block">
-                    <p class="glossary-card-header">{{combo.name}}<p>
-                    {{$ctrl.formatPunches(combo)}}
-                </div>
+        <div class="add-small-margin">
+            <div class="card card-block">
+                <p class="glossary-card-header">{{$ctrl.getName()}}<p>
+                {{$ctrl.formatPunches()}}
             </div>
         </div>
     </div>
