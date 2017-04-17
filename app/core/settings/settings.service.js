@@ -9,7 +9,7 @@ angular
             service.maxRounds = 2;
             service.timeBetweenPunches = 750;
             service.timeBetweenCombos = 1000;
-            service.roundIntermission = 10000;
+            service.roundIntermission = 60000;
             service.displayType = "numbers";
 
             service.setRoundTime = function(roundTime) {
